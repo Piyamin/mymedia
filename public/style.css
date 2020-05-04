@@ -1,0 +1,218 @@
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 1.7rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            text-align: left;
+            background-color: black;
+        }
+        
+        @media (min-width: 576px) {
+            .form-inline .form-control {
+                display: inline-block;
+                width: 45rem;
+                vertical-align: middle;
+            }
+        }
+        
+        h1#logo a {
+            float: left;
+            width: 239px;
+            height: 50px;
+            background: url("images/logonew1.png") no-repeat 0 0;
+            font-size: 0;
+            line-height: 0;
+            text-indent: -4000px;
+        }
+        
+        .navbar-dark .navbar-toggler {
+            margin-right: 30rem;
+        }
+        
+        .mb-lg-0,
+        .my-lg-0 {
+            padding-top: 1rem;
+        }
+        
+        .mb-lg-0,
+        .my-lg-0 {
+            right: 2rem;
+            margin-bottom: 0!important;
+            position: absolute;
+        }
+        
+        .form-control {
+            display: block;
+            width: 100%;
+            height: calc(1.5em + .75rem + 2px);
+            padding: .375rem .75rem;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #7d767657;
+            background-clip: padding-box;
+            border: 1px solid #5c0202;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+        
+        .form-control:focus {
+            color: white;
+            background-color: rgb(80, 79, 79);
+            border-color: #5c0202;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+        }
+        
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            color: #212529;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1.6rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+        
+        .btn-secondary {
+            float: right;
+            margin-top: 2rem;
+            margin-right: 1rem;
+        }
+        
+        #btnsignin {
+            float: right;
+            margin-top: 1rem;
+            margin-right: 1.6rem;
+            color: white;
+            background-color: #ff0000;
+            border-color: #5c0202;
+            margin-right: 2.3rem
+        }
+        
+        #btnsignup {
+            float: right;
+            margin-top: 1rem;
+            margin-right: 1.6rem;
+            color: white;
+            border-color: #5c0202;
+        }
+        
+        #btnsignup:hover {
+            background-color: #292929;
+        }
+        
+        .btn-secondary:hover {
+            color: #fff;
+            background-color: #f03820;
+            border-color: #5c0202;
+        }
+        
+        .btn-outline-success {
+            color: #dadbef;
+            border-color: #a72828;
+        }
+        
+        .btn-outline-success:hover {
+            color: #fff;
+            background-color: #f03820;
+            border-color: #5c0202;
+        }
+        
+        .navbar-nav>li {
+            float: left;
+        }
+        
+        .navbar-collapse {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        
+        @media (min-width: 992px) {
+            .navbar-expand-lg .navbar-nav .nav-link {
+                padding-right: 1rem;
+                padding-left: .5rem;
+            }
+        }
+        
+        .bg-dark {
+            background-color: #000000!important;
+            border-top: 1px dashed #666;
+            border-bottom: 1px dashed #666;
+        }
+        
+        .navbar-dark .navbar-nav .nav-link {
+            color: white;
+        }
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            display: none;
+            float: left;
+            min-width: 10rem;
+            padding: rem 0;
+            margin: .125rem 0 0;
+            font-size: 1.8rem;
+            color: #212529;
+            text-align: left;
+            list-style: none;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, .15);
+            border-radius: 12.25rem;
+        }
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            display: none;
+            float: left;
+            min-width: 10rem;
+            padding: rem 0;
+            margin: .125rem 0 0;
+            font-size: 1.8rem;
+            color: #212529;
+            text-align: left;
+            list-style: none;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, .15);
+            border-radius: 25rem;
+        }
+        
+        .dropdown-item {
+            display: block;
+            width: 100%;
+            padding: 0.25rem 1.5rem;
+            clear: both;
+            font-weight: 400;
+            color: white;
+            text-align: inherit;
+            white-space: nowrap;
+            background-color: #1e1e1f;
+            border: 0;
+        }
+        
+        .dropdown-item:hover,
+        .dropdown-item:focus {
+            color: white;
+            text-decoration: none;
+            background-color: #141414;
+        }

@@ -1,0 +1,2 @@
+<?php
+http://localhost/cimongo/
