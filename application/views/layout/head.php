@@ -16,7 +16,7 @@
     <!-- style -->
     <link rel="stylesheet" href="public/style.css">
     <link rel="stylesheet" href="public/account.css">
-    <link rel="stylesheet" href="public/signup.css">
+    <!-- <link rel="stylesheet" href="public/signup.css"> -->
 
 
 </head>

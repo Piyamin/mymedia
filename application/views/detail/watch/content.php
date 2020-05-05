@@ -9,7 +9,7 @@
 
 
             <div class="col-md-4">
-                <img src="img/staffs/staff03.jpg" class="img-fluid w-50 mx-auto d-block" />
+                <img src="<?php echo base_url('public/images/staffs/staff03.jpg') ?>" class="img-fluid w-50 mx-auto d-block" />
                 <h4 class="text-center  text-white">Spider-Man 2 (2004) ไอ้แมงมุม 2</h4>
                 <span class="text-warning fa fa-star"></span>
                 <span class="text-warning fa fa-star"></span>
