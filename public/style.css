@@ -102,12 +102,13 @@
             margin-right: 2.3rem
         }
         
-        #btnsignup {
-            float: right;
+        .btnsignup {
+            float: center;
             margin-top: 1rem;
             margin-right: 1.6rem;
-            color: white;
-            border-color: #5c0202;
+            color: rgb(3, 3, 3);
+            background-color: #ffffff;
+            border-color: #ffffff;
         }
         
         #btnsignup:hover {
@@ -191,7 +192,7 @@
             color: #212529;
             text-align: left;
             list-style: none;
-            background-color: #fff;
+            background-color: rgb(0, 0, 0);
             background-clip: padding-box;
             border: 1px solid rgba(0, 0, 0, .15);
             border-radius: 25rem;
@@ -215,4 +216,9 @@
             color: white;
             text-decoration: none;
             background-color: #141414;
+        }
+        
+        #iconuser {
+            color: #aa0b0b;
+            margin-left: 8rem;
         }

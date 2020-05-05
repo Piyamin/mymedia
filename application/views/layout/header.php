@@ -1,13 +1,19 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col md-2 ">
+            <div class="col-4 ">
                 <div class=".img-fluid. max-width: 100%;">
                     <h1 id="logo"><a href="http://localhost/mymedia">MyMedia</a></h1>
                 </div>
-                <a class="btn btn-secondary" id="btnsignin" href="#">SignIn</a>
-                <a class="btn btn-secondary" id="btnsignup" href="#">SignUp</a>
-
+            </div>
+            <div class="col-6"></div>
+            <div class="col-2">
+                <i class="fas fa-user-circle fa-3x" id="iconuser" data-toggle="dropdown"></i>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
             </div>
         </div>
         <div class="row mt-2">
