@@ -10,7 +10,7 @@
             <div class="col-2">
                 <i class="fas fa-user-circle fa-2x mt-4" id="iconuser" data-toggle="dropdown"></i>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="http://localhost/mymedia/acount">Acount</a>
+                    <a class="dropdown-item" href="http://localhost/mymedia/account">Acount</a>
                     <a class="dropdown-item" href="#">help</a>
                     <a class="dropdown-item" href="http://localhost/mymedia">LogOut</a>
                 </div>
