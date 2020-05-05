@@ -16,15 +16,21 @@
                 <span class="text-warning fa fa-star"></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
+                <hr>
 
-                <table class="table table-borderless"></table>
-                <tbody>
-                    <tr>
-                        <td><button type="button" class="btn btn-outline-danger btn-block">Save</button></td>
-                        <td><a href="http://localhost/mymedia/detail"><button type="button" class="btn btn-outline-danger btn-block">Back</button></a></td>
-                    </tr>
-                </tbody>
-                </table>
+                <div class="row">
+                    <br>
+                    <div class="col-md-12">
+                        <a href=""><button type="button" class="btn-danger btn-block"> Save </button></a>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="col-md-12">
+                        <a href="http://localhost/mymedia/detail"><button type="button" class="btn-danger btn-block">Back</button></a>
+                    </div>
+                </div> 
+            </div>
+
             </div>
         </div>
     </div>
