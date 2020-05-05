@@ -36,7 +36,7 @@
                                     <a class="dropdown-item" href="#">ไซไฟและแฟนตาซี</a>
                                     <a class="dropdown-item" href="#">ซีรี่ย์ต่างประเทศ</a>
                                     <a class="dropdown-item" href="#">ซีรี่ย์ไทย</a>
-                                    <a class="dropdown-item" href="#">ซีรี่ย์เอซีย</a>
+                                    <a class="dropdown-item" href="#">ซีรี่ย์เอเชีย</a>
                                     <a class="dropdown-item" href="#">ซีรี่ย์อนิเมะ</a>
                                     <a class="dropdown-item" href="#">รายการสำหรับเด็ก</a>
                                 </div>
