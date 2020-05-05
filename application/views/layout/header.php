@@ -8,11 +8,11 @@
             </div>
             <div class="col-6"></div>
             <div class="col-2">
-                <i class="fas fa-user-circle fa-3x" id="iconuser" data-toggle="dropdown"></i>
+                <i class="fas fa-user-circle fa-2x mt-4" id="iconuser" data-toggle="dropdown"></i>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="http://localhost/mymedia/acount">Acount</a>
+                    <a class="dropdown-item" href="#">help</a>
+                    <a class="dropdown-item" href="http://localhost/mymedia">LogOut</a>
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li class="nav-item active">
-                                <a class="nav-link" href="http://localhost/mymedia">
+                                <a class="nav-link" href="http://localhost/mymedia/main">
                                     HOME<span class="sr-only">(current)</span>
                                 </a>
                             </li>
@@ -36,12 +36,12 @@
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#">ยอดนิยม</a>
                                     <a class="dropdown-item" href="#">โรแมนติกคอมเมดี้</a>
-                                    <a class="dropdown-item" href="#">ดราม่า</a>
+                                    <a class="dropdown-item" href="http://localhost/mymedia/genres_drama">ดราม่า</a>
                                     <a class="dropdown-item" href="#">สืบสวน/อาชญากรรม</a>
                                     <a class="dropdown-item" href="#">สยองขวัญ</a>
                                     <a class="dropdown-item" href="#">ไซไฟและแฟนตาซี</a>
                                     <a class="dropdown-item" href="#">ซีรี่ย์ต่างประเทศ</a>
-                                    <a class="dropdown-item" href="#">ซีรี่ย์ไทย</a>
+                                    <a class="dropdown-item" href="http://localhost/mymedia/genres_seriesthai">ซีรี่ย์ไทย</a>
                                     <a class="dropdown-item" href="#">ซีรี่ย์เอเชีย</a>
                                     <a class="dropdown-item" href="#">ซีรี่ย์อนิเมะ</a>
                                     <a class="dropdown-item" href="#">รายการสำหรับเด็ก</a>

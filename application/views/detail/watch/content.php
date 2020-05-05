@@ -26,13 +26,13 @@
                     <br>
                     <br>
                     <div class="col-md-12">
-                        <a href="http://localhost/mymedia/detail"><button type="button" class="btn-danger btn-block">Back</button></a>
+                        <a href="http://localhost/mymedia/detail2"><button type="button" class="btn-danger btn-block">Back</button></a>
                     </div>
-                </div> 
+                </div>
             </div>
 
-            </div>
         </div>
     </div>
+</div>
 </div>
 </div>
