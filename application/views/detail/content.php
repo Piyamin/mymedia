@@ -42,16 +42,16 @@
                         <h4 class="text-white">2006</h4>
                     </div>
                 </div>
-            <hr>
+                <hr>
 
                 <div class="row">
                     <div class="col-md-6">
                         <a href="#"><button type="button" class="btn-danger btn-block"> Watch movie</button></a>
                     </div>
                     <div class="col-md-6">
-                        <a href="http://localhost/mymedia"><button type="button" class="btn-danger btn-block">Back</button></a>
+                        <a href="http://localhost/mymedia/main"><button type="button" class="btn-danger btn-block">Back</button></a>
                     </div>
-                </div> 
+                </div>
             </div>
 
             <div class="col-md-8">

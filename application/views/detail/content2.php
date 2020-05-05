@@ -30,7 +30,7 @@
             <tbody>
                 <tr>
                     <td><a href="http://localhost/mymedia/watch"><button type="button" class="btn btn-outline-danger btn-block">Watch movie</button></a></td>
-                    <td><a href="http://localhost/mymedia"><button type="button" class="btn btn-outline-danger btn-block">Back</button></a></td>
+                    <td><a href="http://localhost/mymedia/main"><button type="button" class="btn btn-outline-danger btn-block">Back</button></a></td>
                 </tr>
         </table>
         </table>
