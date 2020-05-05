@@ -50,7 +50,7 @@
                 <tbody>
                     <tr>
                         <td><a href="#"><button type="button" class="btn-danger btn-block"> Watch movie</button></a></td>
-                        <td><button type="button" class="btn-danger btn-block">Back</button></td>
+                        <td><a href="http://localhost/mymedia"><button type="button" class="btn-danger btn-block">Back</button></a></td>
                     </tr>
                     </table>
                     </table>
