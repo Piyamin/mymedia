@@ -18,8 +18,9 @@
             <input type="password" placeholder="Enter Password" name="psw" required>
 
             <a href="http://localhost/mymedia/main"><button type="button" class="btn ">Login</button></a>
-            <br>
-            <a class=" btnsignup " href="#">SignUp</a>
+            <hr>
+            <a href="http://localhost/mymedia/main"><button type="button" class="btn ">Signup</button></a>
+            <hr>
             <label class="form-check-label">
                 <input class="form-check-input" type="checkbox"> Remember me
             </label>
