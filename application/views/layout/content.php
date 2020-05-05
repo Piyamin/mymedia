@@ -6,7 +6,7 @@
                 <a href="http://localhost/mymedia/detail"><img src="<?php echo base_url(); ?>public/images/movie1.jpg" class="img-responsive img-fluid " alt="xman" /></a>
             </div>
             <div class="col-2">
-                <a href="#"><img src="<?php echo base_url(); ?>public/images/movie2.jpg" class="img-responsive img-fluid" alt="" /></a>
+                <a href="http://localhost/mymedia/detail"><img src="<?php echo base_url(); ?>public/images/movie2.jpg" class="img-responsive img-fluid" alt="" /></a>
             </div>
             <div class="col-2">
                 <a href="#"><img src="<?php echo base_url(); ?>public/images/movie3.jpg" class="img-responsive img-fluid" alt="" /></a>
