@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col md-2 ">
                 <div class=".img-fluid. max-width: 100%;">
-                    <h1 id="logo"><a href="#">MyMedia</a></h1>
+                    <h1 id="logo"><a href="http://localhost/mymedia">MyMedia</a></h1>
                 </div>
                 <a class="btn btn-secondary" id="btnsignin" href="#">SignIn</a>
                 <a class="btn btn-secondary" id="btnsignup" href="#">SignUp</a>
@@ -19,7 +19,7 @@
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="http://localhost/mymedia">
                                     HOME<span class="sr-only">(current)</span>
                                 </a>
                             </li>
