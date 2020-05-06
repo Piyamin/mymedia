@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-4 ">
                 <div class=".img-fluid. max-width: 100%;">
-                    <h1 id="logo"><a href="http://localhost/mymedia">MyMedia</a></h1>
+                    <h1 id="logo"><a href="http://localhost/mymedia/main">MyMedia</a></h1>
                 </div>
             </div>
             <div class="col-6"></div>
