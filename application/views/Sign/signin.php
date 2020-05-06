@@ -18,7 +18,7 @@
 
             <button type="submit" class="btn ">Login</button>
             <hr>
-            <a href="http://localhost/mymedia/"><button type="button" class="btn ">Signup</button></a>
+            <a href="http://localhost/mymedia/signup"><button type="button" class="btn ">Signup</button></a>
             <hr>
             <label class="form-check-label">
                 <input class="form-check-input" type="checkbox"> Remember me
