@@ -7,7 +7,7 @@ class Comingsoon extends CI_Controller
 	{
 		$this->load->view('layout/head');
 		$this->load->view('layout/header');
-		$this->load->view('comingsoon/content');
+		$this->load->view('coming soon/content');
 		$this->load->view('layout/foot');
 		$this->load->view('layout/footer');
 	}
