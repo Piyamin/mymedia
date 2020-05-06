@@ -6,7 +6,7 @@
 
             <h3>Chotiwich Waradach</h3>
             <p>chotiwich6793@gmail.com</p>
-            <button type="button" class="btn bg-light text-dark">Unsubscribe</button>
+            <button type="button" class="btn btn-outline-danger btn-block">Unsubscribe</button>
         </div>
         <div class="col-md-8">
             <hr>
