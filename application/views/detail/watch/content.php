@@ -21,12 +21,12 @@
                 <div class="row">
                     <br>
                     <div class="col-md-12">
-                        <a href=""><button type="button" class="btn-danger btn-block"> Save </button></a>
+                        <a href=""><button type="button" class="btn btn-outline-success btn-block"> Save </button></a>
                     </div>
                     <br>
                     <br>
                     <div class="col-md-12">
-                        <a href="http://localhost/mymedia/detail2"><button type="button" class="btn-danger btn-block">Back</button></a>
+                        <a href="http://localhost/mymedia/detail2"><button type="button" class="btn btn-outline-success btn-block">Back</button></a>
                     </div>
                 </div>
             </div>
