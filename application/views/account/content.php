@@ -6,7 +6,7 @@
 
             <h3>Chotiwich Waradach</h3>
             <p>chotiwich6793@gmail.com</p>
-            <button type="button" class="btn btn-outline-danger btn-block">Unsubscribe</button>
+            <button type="button" class="btn btn-outline-success btn-block">Unsubscribe</button>
         </div>
         <div class="col-md-8">
             <hr>
@@ -22,7 +22,7 @@
                         <td>
                             <p>chotiwich6793@gmail.com</p>
                         </td>
-                        <td><button type="button" class="btn btn-outline-danger btn-block">เปลี่ยนอีเมลในบัญชี</button></td>
+                        <td><button type="button" class="btn btn-outline-success btn-block">เปลี่ยนอีเมลในบัญชี</button></td>
                     </tr>
                     <tr>
                         <td>
@@ -31,7 +31,7 @@
                         <td>
                             <p>Chotiwich Waradach</p>
                         </td>
-                        <td><button type="button" class="btn btn-outline-danger btn-block">เปลี่ยนชื่อบัญชี</button></td>
+                        <td><button type="button" class="btn btn-outline-success btn-block">เปลี่ยนชื่อบัญชี</button></td>
                     </tr>
                     <tr>
                         <td>
@@ -40,7 +40,7 @@
                         <td>
                             <p>***********</p>
                         </td>
-                        <td><button type="button" class="btn btn-outline-danger btn-block">เปลี่ยนรหัสผ่าน</button></td>
+                        <td><button type="button" class="btn btn-outline-success btn-block">เปลี่ยนรหัสผ่าน</button></td>
                     </tr>
                     <tr>
                         <td>
@@ -49,7 +49,7 @@
                         <td>
                             <p>0997854251</p>
                         </td>
-                        <td><button type="button" class="btn btn-outline-danger btn-block">เปลี่ยนหมายเลขโทรศัพท์</button></td>
+                        <td><button type="button" class="btn btn-outline-success btn-block">เปลี่ยนหมายเลขโทรศัพท์</button></td>
                     </tr>
                     <tr>
                         <td>
@@ -58,7 +58,7 @@
                         <td>
                             <p>360 ถ.อภัยบริรักษ์ ต.คูหาสวรรค์ อ.เมือง จ.พัทลุง 93000</p>
                         </td>
-                        <td><button type="button" class="btn btn-outline-danger btn-block">เปลี่ยนแปลงที่อยู่</button></td>
+                        <td><button type="button" class="btn btn-outline-success btn-block">เปลี่ยนแปลงที่อยู่</button></td>
                     </tr>
                 </tbody>
             </table>
