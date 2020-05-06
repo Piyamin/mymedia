@@ -48,7 +48,7 @@
                                 </div>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="http://localhost/mymedia/comingsoon>">
+                                <a class="nav-link" href="http://localhost/mymedia/comingsoon">
                                     COMING SOON</h1> <span class="sr-only">(current)</span>
                                 </a>
                             </li>
