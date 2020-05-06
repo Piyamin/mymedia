@@ -53,7 +53,7 @@
                                 </a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="http://localhost/mymedia/history">
                                     HISTORY<span class="sr-only">(current)</span>
                                 </a>
                             </li>
