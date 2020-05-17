@@ -6,21 +6,27 @@
         <div class="row">
             <div class="col-2">
                 <a href="http://localhost/mymedia/detail"><img src="<?php echo base_url(); ?>public/images/movie1.jpg" class="img-responsive img-fluid " alt="xman" /></a>
+                <h4 class="bg-danger text-center  text-white">X-MEN 3 <br> (2006)</h4>
             </div>
             <div class="col-2">
                 <a href="http://localhost/mymedia/detail2"><img src="<?php echo base_url(); ?>public/images/movie2.jpg" class="img-responsive img-fluid" alt="" /></a>
+                <h4 class="bg-danger text-center  text-white">Spider-Man 2 (2004)</h4>
             </div>
             <div class="col-2">
                 <a href="#"><img src="<?php echo base_url(); ?>public/images/movie3.jpg" class="img-responsive img-fluid" alt="" /></a>
+                <h4 class="bg-danger text-center  text-white">Spider-Man 3 (2007)</h4>
             </div>
             <div class="col-2">
                 <a href="#"><img src="<?php echo base_url(); ?>public/images/movie4.jpg" class="img-responsive img-fluid" alt="" /></a>
+                <h4 class="bg-danger text-center  text-white">Valkyrie (2008)</h4>
             </div>
             <div class="col-2">
                 <a href="#"><img src="<?php echo base_url(); ?>public/images/movie5.jpg" class="img-responsive img-fluid" alt="" /></a>
+                <h4 class="bg-danger text-center  text-white">Gladiator (2000)</h4>
             </div>
             <div class="col-2">
                 <a href="#"><img src="<?php echo base_url(); ?>public/images/movie6.jpg" class="img-responsive img-fluid" alt="" /></a>
+                <h4 class="bg-danger text-center  text-white">Ice Age (2000)</h4>
             </div>
         </div>
         <hr>
