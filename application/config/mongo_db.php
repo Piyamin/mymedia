@@ -140,7 +140,7 @@ $config['mongo_db']['default'] = [
 		'port'          => '27017',
 		'user_name'     => '',
 		'user_password' => '',
-		'db_name'       => 'classicmodels',
+		'db_name'       => 'mymedia',
 		'db_options'    => []
 	],
 
