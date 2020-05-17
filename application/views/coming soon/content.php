@@ -6,37 +6,37 @@
     <div class="col-2">
         <hr>
         <a href=""><img src="<?php echo base_url(); ?>public/images/movie97.jpg" class="" alt="" width="160" height="214" /></a>
-        <h4 class=" bg-danger text-center  text-white">มนต์รักดอกผักบุ้ง เลิกคุยทั้งอำเภอ</h4>
+        <h4 class=" bg-danger text-center  text-white">มนต์รักดอกผักบุ้ง <br> (2020) </h4>
     </div>
 
     <div class="col-2">
         <hr>
         <a href=""><img src="<?php echo base_url(); ?>public/images/movie98.jpg" class="" alt="" width="160" height="214" /></a>
-        <h4 class="bg-danger text-center  text-white">FAST AND FURIOUS 9</h4>
+        <h4 class="bg-danger text-center  text-white">FAST AND FURIOUS 9 <br> (2020) </h4>
     </div>
 
     <div class="col-2">
         <hr>
         <a href=""><img src="<?php echo base_url(); ?>public/images/movie99.jpg" class="" alt="" width="160" height="214" /></a>
-        <h4 class=" bg-danger text-center  text-white">ฮักมะย๋อมมะแย๋ม</h4>
+        <h4 class=" bg-danger text-center  text-white">ฮักมะย๋อมมะแย๋ม <br> (2020) </h4>
     </div>
 
     <div class="col-2">
         <hr>
         <a href=""><img src="<?php echo base_url(); ?>public/images/movie100.jpg" class="" alt="" width="160" height="214" /></a>
-        <h4 class=" bg-danger text-center  text-white">สุขสันต์วันโสด</h4>
+        <h4 class=" bg-danger text-center  text-white">สุขสันต์วันโสด<br> (2020)</h4>
     </div>
 
     <div class="col-2">
         <hr>
         <a href=""><img src="<?php echo base_url(); ?>public/images/movie101.jpg"class="" alt="" width="160" height="214" /></a>
-        <h4 class=" bg-danger text-center  text-white">Peninsula</h4>
+        <h4 class=" bg-danger text-center  text-white">Peninsula <br> (2020)</h4>
     </div>
 
     <div class="col-2">
         <hr>
         <a href=""><img src="<?php echo base_url(); ?>public/images/movie102.jpg" class="" alt="" width="160" height="214" /></a>
-        <h4 class=" bg-danger text-center  text-white">ผู้บ่าวไทบ้าน อีสานจ้วด...</h4>
+        <h4 class=" bg-danger text-center  text-white">ผู้บ่าวไทบ้าน อีสานจ้วด... <br> (2020)</h4>
     </div>
 
     <hr>
