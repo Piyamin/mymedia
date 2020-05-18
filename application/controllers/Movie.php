@@ -16,7 +16,10 @@ class Movie extends CI_Controller
 			'movie_id' => $movieId
 		);
 		$data['genres'] = $this->genres_model->findAll();
-		$data['movie'] = $this->movie_model->findAll();
+		$condition = array(
+			'genres' => $this->mongo_db->create_document_id($movieId)
+		);
+		$data['movie'] = $this->movie_model->findAll($condition);
 		$this->load->view('layout/head');
 		$this->load->view('layout/header',$data);
 		$this->load->view('genres/content',$movie_id);

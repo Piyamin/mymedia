@@ -11,6 +11,7 @@ class Main extends CI_Controller
     }  
 	public function index()
 	{
+		
 		$data['genres'] = $this->genres_model->findAll();
 		$data['movie'] = $this->movie_model->findAll();
 		$this->load->view('layout/head');

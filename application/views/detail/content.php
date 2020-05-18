@@ -1,6 +1,7 @@
 <div class="row">
     <div class="col">
         <div class="row">
+            <?php foreach ($detail as $row) { ?>
             <div class="col-md-4">
                 <img src="<?php echo base_url('public/images/staffs/staff02.jpg') ?>" class="img-fluid w-50 mx-auto d-block" />
                 <h5 class="text-center bg-danger text-white">X-Men: The Last Stand (2006) </h5>
@@ -67,6 +68,7 @@
                 <h2 class="bg-danger text-white"> เรื่องย่อ </h2>
                 <h4 class="text-white">บทส่งท้ายไตรภาคของ X-MEN จะเป็นองก์ เยียวยา ที่พอเห็นทางลดทอนภัยจากมนุษย์กลายพันธุ์ที่หวังจะพลิกโฉมหน้าประวัติศาสตร์ เป็นครั้งแรกที่เหล่ามนุษย์กลายพันธุ์จะได้เลือกว่า หากพวกเขายังคงรักษาคุณลักษณะพิเศษเฉพาะตัวไว้ ก็ต้องแยกตัวออกไปใช้ชีวิตเป็นเอกเทศ ไม่ข้องเกี่ยวกับสังคมคนธรรมดา หรือมิฉะนั้นก็ต้องยอมลบล้างพลังพิเศษของพวกเขาแล้วใช้ชีวิตเยี่ยงปุถุชน ผู้นำกลุ่มมนุษย์กลายพันธุ์ที่คิดต่างกันคนละขั้ว</h4>
             </div>
+        <?php } ?>
         </div>
     </div>
 </div>

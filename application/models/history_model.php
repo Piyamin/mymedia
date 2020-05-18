@@ -24,4 +24,25 @@ class history_model extends CI_Model
         $result = $this->mongo_db->get('history');
         return $result;
     }
+    public function sort_movie()
+    {
+        $result = $this->mongo_db->aggregate(
+            'history',
+            [
+                [
+                    '$sort' =>[
+                        'date'=> -1
+                    ]
+                    
+                ]
+                
+            ],[
+                'cursor' => [
+                    'batchSize' => 0
+                ]
+            ]
+        );
+        // $data = $this->mongo_db->row_array($result);
+        return $result;
+    }
 }

@@ -12,6 +12,8 @@
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="http://localhost/mymedia/account">Acount</a>
                     <a class="dropdown-item" href="#">help</a>
+                    <a class="dropdown-item" href="#">Add movie</a>
+                    <a class="dropdown-item" href="#"></a>
                     <a class="dropdown-item" href="http://localhost/mymedia">LogOut</a>
                 </div>
             </div>
@@ -44,17 +46,17 @@
                                 </div>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="http://localhost/mymedia/comingsoon">
+                                <a class="nav-link" href="<?php echo base_url('comingsoon')?>">
                                     COMING SOON</h1> <span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="http://localhost/mymedia/history">
+                                <a class="nav-link" href="<?php echo base_url('history')?>">
                                     HISTORY<span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="http://localhost/mymedia/contact">
+                                <a class="nav-link" href="<?php echo base_url('contact')?>">
                                     CONTACT<span class="sr-only">(current)</span>
                                 </a>
                             </li>
