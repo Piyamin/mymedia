@@ -12,14 +12,14 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                        <span class="col-md-1 col-md-offset-2 text-center"></span>
                         <div class="col-md-8">
                             <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope bigicon"></i></span>
                         <div class="col-md-8">
                             <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
                         </div>
@@ -41,7 +41,7 @@
 
                     <div class="form-group">
                         <div class="col-md-12 text-center">
-                            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                            <button type="submit" class="btn btn-primary btn-lg btnsend">SEND</button>
                         </div>
                     </div>
                 </fieldset>
@@ -73,10 +73,10 @@
     }
 
     .form-horizontal .form-group {
-        margin-right: -15px;
-        margin-left: -15px;
-        margin-top: 2rem;
-    }
+    margin-right: -1rem;
+    margin-left: -20rem;
+    margin-top: 2rem;
+}
 
     .btn {
         display: inline-block;
@@ -97,6 +97,10 @@
         line-height: 1.5;
         border-radius: .25rem;
         transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        
+    }
+    .btn.btnsend{
+        margin-left: 20rem;
     }
 
     .btn:hover {
