@@ -7,12 +7,8 @@
         '_id' => $CI->mongo_db->create_document_id($id)
      );
      $result = $CI->genres_model->findOne($condition);
-     print_r($result['genName']);
-    //  return $result['genName'];
+     return $result['genName'];
  }
  
- 
- 
-
 
 ?>

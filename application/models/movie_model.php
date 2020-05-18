@@ -7,12 +7,24 @@ class Movie_model extends CI_Model
     {
         parent::__construct();
     }
+    public function findOne($condition = [])
+    {
+        if (sizeof($condition) > 0) {
+            $this->mongo_db->where($condition);
+        }
+        $result = $this->mongo_db->getOne('movie');
+        // print_r($result);
+        $data = $this->mongo_db->row_array($result);
+        // print_r($data);
+        return $data;
+    }
     public function findAll($condition = [])
     {
         if (sizeof($condition) > 0) {
             $this->mongo_db->where($condition);
         }
         $result = $this->mongo_db->get('movie');
-        return $result;
+        $data = $this->mongo_db->row_array($result);
+        return $data;
     }
 }
