@@ -1,6 +1,7 @@
 <div class="row">
         <h2 class="text-white"><?php echo getNamegenrs($movie_id) ?></h2>
     <hr>
+<div class="col-12">
     <div class="row ">
         <div class="col-2">
             <a href="http://localhost/mymedia/detail"><img src="<?php echo base_url(); ?>public/images/movie27.jpg" class="" alt="" width="160" height="214" /></a>
@@ -27,6 +28,8 @@
             <h4 class=" bg-danger text-center  text-white">รักแห่งสยาม <br> (2012)</h4>
         </div>
     </div>
+    <br>
+    <br>
     <div class="row mt-2">
         <div class="col-2">
             <a href="http://localhost/mymedia/detail"><img src="<?php echo base_url(); ?>public/images/movie85.jpg" class="" alt="" width="160" height="214" /></a>
@@ -87,5 +90,6 @@
 
 
     </div>
+</div>
 </div>
 </div>
