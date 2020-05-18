@@ -1,6 +1,7 @@
 <div class="row">
         <h2 class="text-white"><?php echo getNamegenrs($movie_id) ?></h2>
     <hr>
+<div class="col-12">
     <div class="row ">
     <?php foreach ($movie as $row) { ?>
         <div class="col-2">
@@ -8,7 +9,7 @@
         <h4 class=" bg-danger text-center  text-white"> <?php echo getMovie($movie_id) ?><br> (2019)</h4>
     </div>
     <?php } ?>
-
     </div>
+</div>
 </div>
 </div>
