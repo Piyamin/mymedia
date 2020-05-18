@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-4 ">
                 <div class=".img-fluid. max-width: 100%;">
-                    <h1 id="logo"><a href="http://localhost/mymedia/main">MyMedia</a></h1>
+                    <h1 id="logo"><a href="<?php echo base_url('/main') ?>">MyMedia</a></h1>
                 </div>
             </div>
             <div class="col-6"></div>
@@ -25,7 +25,7 @@
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li class="nav-item active">
-                                <a class="nav-link" href="http://localhost/mymedia/main">
+                                <a class="nav-link" href="<?php echo base_url('main') ?>">
                                     HOME<span class="sr-only">(current)</span>
                                 </a>
                             </li>
@@ -33,18 +33,14 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     GENRES
                                 </a>
+        
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">ยอดนิยม</a>
-                                    <a class="dropdown-item" href="#">โรแมนติกคอมเมดี้</a>
-                                    <a class="dropdown-item" href="http://localhost/mymedia/genres_drama">ดราม่า</a>
-                                    <a class="dropdown-item" href="#">สืบสวน/อาชญากรรม</a>
-                                    <a class="dropdown-item" href="#">สยองขวัญ</a>
-                                    <a class="dropdown-item" href="#">ไซไฟและแฟนตาซี</a>
-                                    <a class="dropdown-item" href="#">ซีรี่ย์ต่างประเทศ</a>
-                                    <a class="dropdown-item" href="http://localhost/mymedia/genres_seriesthai">ซีรี่ย์ไทย</a>
-                                    <a class="dropdown-item" href="#">ซีรี่ย์เอเชีย</a>
-                                    <a class="dropdown-item" href="#">ซีรี่ย์อนิเมะ</a>
-                                    <a class="dropdown-item" href="#">รายการสำหรับเด็ก</a>
+                                <?php foreach ($genres as $row) { ?>
+                                    <a class="dropdown-item" href="<?php echo base_url('movie/'.$row['_id'])?>"><?php echo $row['genName'] ?></a>
+                                <?php } ?>
+                                    
+                                    
+                                    
                                 </div>
                             </li>
                             <li class="nav-item active">

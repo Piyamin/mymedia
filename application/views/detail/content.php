@@ -46,10 +46,18 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <a href="#"><button type="button" class="btn btn-outline-success btn-block"> Watch movie</button></a>
+                        <button type="button" class="btn btn-outline-success btn-block" data-toggle="modal" data-target=".bd-vedio-modal-lg"> Watch movie</button>
                     </div>
                     <div class="col-md-6">
                         <a href="http://localhost/mymedia/main"><button type="button" class="btn btn-outline-success btn-block ">Back</button></a>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade bd-vedio-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog ">
+                            <div class="modal-content">
+                            <iframe width="800" height="500" src="https://www.youtube.com/embed/V9elBa2LPUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
