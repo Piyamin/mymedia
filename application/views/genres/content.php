@@ -1,7 +1,7 @@
 <div class="row">
-    <h2 class="text-white">ดราม่า</h2>
+        <h2 class="text-white"><?php echo getNamegenrs($movie_id) ?></h2>
     <hr>
-    <div class="row">
+    <div class="row ">
         <div class="col-2">
             <a href="http://localhost/mymedia/detail"><img src="<?php echo base_url(); ?>public/images/movie27.jpg" class="" alt="" width="160" height="214" /></a>
         </div>
@@ -21,9 +21,7 @@
             <a href="#"><img src="<?php echo base_url(); ?>public/images/movie30.jpg" class="" alt="" width="160" height="214" /></a>
         </div>
     </div>
-    <br>
-    <br>
-    <div class="row">
+    <div class="row mt-2">
         <div class="col-2">
             <a href="http://localhost/mymedia/detail"><img src="<?php echo base_url(); ?>public/images/movie85.jpg" class="img-responsive img-fluid " alt="xman" /></a>
         </div>

@@ -11,12 +11,15 @@ class Movie extends CI_Controller
     }  
 	public function index($movieId)
 	{
-		print_r($movieId);
+		
+		$movie_id = array(
+			'movie_id' => $movieId
+		);
 		$data['genres'] = $this->genres_model->findAll();
 		$data['movie'] = $this->movie_model->findAll();
 		$this->load->view('layout/head');
 		$this->load->view('layout/header',$data);
-		$this->load->view('genres/content');
+		$this->load->view('genres/content',$movie_id);
 		$this->load->view('layout/foot');
 		$this->load->view('layout/footer');
 	}

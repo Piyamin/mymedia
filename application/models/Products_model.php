@@ -14,7 +14,8 @@ class Products_model extends CI_Model
             $this->mongo_db->where($condition);
         }
         $result = $this->mongo_db->getOne('product');
-        return $result;
+        $data = $this->mongo_db->row_array($result);
+        return $data;
     }
     public function findAll($condition = [])
     {
