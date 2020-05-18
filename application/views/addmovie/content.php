@@ -1,35 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-   <head>
-      <!-- Required meta tags-->
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-      <meta name="description" content="Colorlib Templates" />
-      <meta name="author" content="Colorlib" />
-      <meta name="keywords" content="Colorlib Templates" />
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-      <!-- Title Page-->
-      <title>EDIT MOVIE</title>
-      <!-- Font special for pages-->
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet" />
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-      <!-- Main CSS-->
-      <link href="css/main.css" rel="stylesheet" media="all" />
-      <style>
-         .title {
-            color: red;
-         }
-      </style>
-   </head>
-
-   <body>
-      <div class="page-wrapper bg-dark p-t-100 p-b-50">
          <div class="wrapper wrapper--w900">
 
             <div class="card card-5">
@@ -150,15 +118,3 @@
                </div>
             </div>
          </div>
-      </div>
-      </div>
-      </div>
-      <!-- Jquery JS-->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <!-- Main JS-->
-      <script src="js/global.js"></script>
-   </body>
-<!-- This templates was made by Colorlib (https://colorlib.com) -->
-
-</html>
-<!-- end document-->
