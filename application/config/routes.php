@@ -55,3 +55,6 @@ $route['translate_uri_dashes'] = FALSE;
 $route['movie/(:any)'] = function ($id){
     return 'movie/index/' . $id;
 };
+$route['detail/(:any)'] = function ($id){
+    return 'detail/index/' . $id;
+};
