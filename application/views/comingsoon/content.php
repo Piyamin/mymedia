@@ -5,20 +5,20 @@
     <hr>
     
         <div class="row">
-        <?php foreach ($comingsoon as $row) {?>
+        <?php foreach ($movie as $row) {?>
             <div class="col-2">
                 <hr>
-                <a href=""><img src="<?php echo $row['images'] ?>" class="" alt="" width="160" height="214" /></a>
-                <h4 class=" bg-danger text-center  text-white"><?php echo $row['name'] ?><br><?php echo $row['year'] ?></h4>
+                <a href="<?php echo base_url('detail/'.$row['_id'] ) ?>"><img src="<?php echo $row['Path image'] ?>" class="" alt="" width="160" height="214" /></a>
+                <h4 class=" bg-danger text-center  text-white"><?php echo $row['movieName'] ?><br><?php echo $row['movieYear'] ?></h4>
             </div>
         <?php } ?>
         </div>
         <div class="row">
-        <?php foreach ($comingsoon as $row) {?>
+        <?php foreach ($movie as $row) {?>
             <div class="col-6">
                 <hr>
-                <iframe width="540" height="400" src="<?php echo $row['trailer_movie'] ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h3 class="bg-danger text-center  text-white "> <?php echo $row['name'] ?> </h3>
+                <iframe width="540" height="400" src="<?php echo $row['Path video'] ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3 class="bg-danger text-center  text-white "> <?php echo $row['movieName'] ?> </h3>
             </div>
         <?php } ?>
         </div>

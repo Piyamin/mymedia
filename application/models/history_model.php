@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script allowed');
 
-class history_model extends CI_Model
+class History_model extends CI_Model
 {
 
     function __construct()
@@ -24,23 +24,33 @@ class history_model extends CI_Model
         $result = $this->mongo_db->get('history');
         return $result;
     }
-    public function sort_movie()
+    public function gethistory($condition = [])
     {
         $result = $this->mongo_db->aggregate(
             'history',
             [
                 [
-                    '$sort' =>[
-                        'date'=> -1
+                    '$lookup' =>[
+                        'from' =>"movie",
+                        'localField'=>"movie",
+                        'foreignField'=>"_id",
+                        'as'=>"historymovie"
                     ]
                     
+                    ],
+                [
+                    '$match' =>[
+                        'customer'=>  $this->mongo_db->create_document_id($condition) 
+                    ]
                 ]
                 
-            ],[
+            ],  
+            [
                 'cursor' => [
                     'batchSize' => 0
                 ]
-            ]
+            ]  
+            
         );
         // $data = $this->mongo_db->row_array($result);
         return $result;

@@ -10,14 +10,15 @@
             <div class="col-2">
                 <i class="fas fa-user-circle fa-2x mt-4" id="iconuser" data-toggle="dropdown"></i>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="http://localhost/mymedia/account">Acount</a>
+                    <a class="dropdown-item" href="<?php echo base_url('account') ?>">Acount</a>
                     <a class="dropdown-item" href="#">help</a>
-                    <a class="dropdown-item" href="#">Add movie</a>
+                    <a class="dropdown-item" href="<?php echo base_url('addmovie') ?>">Add movie</a>
                     <a class="dropdown-item" href="#"></a>
-                    <a class="dropdown-item" href="http://localhost/mymedia">LogOut</a>
+                    <a class="dropdown-item" href="<?php echo base_url()?>">LogOut</a>
                 </div>
             </div>
         </div>
+        
         <div class="row mt-2">
             <div class="col">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark h-50 ">
@@ -39,10 +40,7 @@
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <?php foreach ($genres as $row) { ?>
                                     <a class="dropdown-item" href="<?php echo base_url('movie/'.$row['_id'])?>"><?php echo $row['genName'] ?></a>
-                                <?php } ?>
-                                    
-                                    
-                                    
+                                <?php } ?>   
                                 </div>
                             </li>
                             <li class="nav-item active">
@@ -51,9 +49,11 @@
                                 </a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="<?php echo base_url('history')?>">
+                                <?php $historyId = '5eaf0005f0656e7d8afe90d6' ?>        
+                                <a class="nav-link" href="<?php echo base_url('history/').$historyId?>">
                                     HISTORY<span class="sr-only">(current)</span>
                                 </a>
+                            
                             </li>
                             <li class="nav-item active">
                                 <a class="nav-link" href="<?php echo base_url('contact')?>">
@@ -61,8 +61,8 @@
                                 </a>
                             </li>
                             <form class="form-inline my-2 my-lg-0" method="get">
-                                <input class="form-control mr-lg-2" id="search" name ="name" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0" name="search" value="search" type="submit">Search</button>
+                                <input class="form-control mr-lg-2" id="search" name ="name" type="search" placeholder="Search" aria-label="Search" value="<?php echo $name; ?>">
+                                <button class="btn btn-outline-success my-2 my-sm-0" name="search" value="search" type="submit" <?php echo $name; ?>>Search</button>
                             </form>
                         </ul>
                     </div>

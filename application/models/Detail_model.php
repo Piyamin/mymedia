@@ -24,6 +24,7 @@ class Detail_model extends CI_Model
             $this->mongo_db->where($condition);
         }
         $result = $this->mongo_db->get('detail');
+        
         return $result;
     }
 }

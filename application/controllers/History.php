@@ -10,16 +10,27 @@ class History extends CI_Controller
 		$this->load->model('history_model');
 		$this->load->model('movie_model');
 		$this->load->model('genres_model');
+		$this->load->model('customer_model');
 		
     }  
-	public function index()
+	public function index($historyId)
 	{
-		// $historyMovie = $this->history_model->sort_movie();
+		$condition =[];
+		$search = $this->input->get('search');
+		$name = $this->input->get('name');
+		if(!empty($search)){
+			if (!empty($name)) {
+				$condition['movieName'] = array('$regex'=> $name);
+			}
+		}
+		$data['name'] = $name;
+		$data['search'] = $search;
 		$dataa = array(
-			'historyMovie' => $this->history_model->sort_movie()
+			'history' => $this->history_model->gethistory($historyId)
 		);
-		$data['history'] = $this->history_model->findAll();
 		$data['movie'] = $this->movie_model->findAll();
+		$data['history'] = $this->history_model->findAll();
+		$data['movie'] = $this->movie_model->findAll($condition);
 		$data['genres'] = $this->genres_model->findAll();		
 		$this->load->view('layout/head');
 		$this->load->view('layout/header',$data);

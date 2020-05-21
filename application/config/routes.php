@@ -56,5 +56,8 @@ $route['movie/(:any)'] = function ($id){
     return 'movie/index/' . $id;
 };
 $route['detail/(:any)'] = function ($id){
-    return 'detail/index/' . $id;
+    return 'detail/index/' .$id;
+};
+$route['history/(:any)'] = function ($id){
+    return 'history/index/' .$id;
 };

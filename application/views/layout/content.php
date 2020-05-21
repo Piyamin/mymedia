@@ -1,6 +1,16 @@
+
+
+
+
+<?php if($this->session->flashdata('success-msg')){ ?>
+    <div class="alert alert-warning" role="alert">
+            Save success
+    </div>
+<?php } ?>
 <div class="row">
     <div class="col">
         <div class="row">
+        
         <?php foreach ($movie as  $row) { ?>
             <div class="col-2">
                 <a href="<?php echo base_url('detail/'.$row['_id'])?>"><img src="<?php echo $row['Path image'] ?>" class="" alt="" width="160" height="214" /></a>

@@ -26,26 +26,12 @@ class Movie_model extends CI_Model
         $result = $this->mongo_db->get('movie');
         return $result;
     }
-    // public function showmovie()
-    // {
-       
-    //     $result = $this->mongo_db->aggregate(
-    //         'history',
-    //         [
-    //             [
-    //                 '$sort' =>[
-    //                     'date'=> -1
-    //                 ]
-                    
-    //             ]
-                
-    //         ],[
-    //             'cursor' => [
-    //                 'batchSize' => 0
-    //             ]
-    //         ]
-    //     );
-    //     // $data = $this->mongo_db->row_array($result);
-    //     return $result;
-    // }
+    public function comingsoon()
+    {
+       $result = $this->mongo_db->where('type',"comingsoon")->get('movie'); 
+        // $data = $this->mongo_db->row_array($result);
+        return $result;
+    
+    }
+    
 }

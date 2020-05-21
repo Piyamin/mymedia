@@ -1,30 +1,27 @@
 <?php if (!defined('BASEPATH')) exit('No direct script allowed');
 
-class Comingsoon_model extends CI_Model
+class Customer_model extends CI_Model
 {
 
     function __construct()
     {
         parent::__construct();
     }
+
     public function findOne($condition = [])
     {
         if (sizeof($condition) > 0) {
             $this->mongo_db->where($condition);
         }
-        $result = $this->mongo_db->getOne('comingsoon');
-        // print_r($result);
-        $data = $this->mongo_db->row_array($result);
-        // print_r($data);
-        return $data;
+        $result = $this->mongo_db->getOne('customer');
+        return $result;
     }
     public function findAll($condition = [])
     {
         if (sizeof($condition) > 0) {
             $this->mongo_db->where($condition);
         }
-        $result = $this->mongo_db->get('comingsoon');
-        // print_r($result);
+        $result = $this->mongo_db->get('customer');
         return $result;
     }
 }

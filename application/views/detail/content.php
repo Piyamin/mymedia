@@ -21,7 +21,9 @@
                         <h4 class="text-white">หมวดหมู่ : </h4>
                     </div>
                     <div class="col-md-3">
-                        <h4 class="text-white"><?php echo $detail[0]['genName'] ?></h4>
+                        <h4 class="text-white"><?php foreach ($detail[0]['genres'] as $key) {
+                            echo  getNamegenrs($key['$oid']);
+                        } ?></h4>
                     </div>
                 </div>
 
@@ -30,7 +32,7 @@
                         <h4 class="text-white">ผู้กำกับ :</h4>
                     </div>
                     <div class="col-md-4">
-                        <h4 class="text-white"><?php echo $detail[0]['nameDirec'] ?></h4>
+                        <h4 class="text-white"><?php echo $detail[0]['directer']['nameDirec'] ?> <?php echo $detail[0]['directer']['lastDirec'] ?></h4>
                     </div>
                 </div>
 
@@ -65,7 +67,7 @@
             <div class="col-md-8">
                 <iframe width="720" height="400" src="<?php echo $detail[0]['Path detail video'] ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <h2 class="bg-danger text-white"> เรื่องย่อ </h2>
-                <h4 class="text-white"><?php echo $detail[0]['abstract'] ?></h4>
+                <h4 class="text-white"><?php echo $detail[0]['plot'] ?></h4>
             </div>
         </div>
     </div>
