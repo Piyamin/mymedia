@@ -12,7 +12,6 @@ class Detail extends CI_Controller
     }  
 	public function index($detailId)
 	{
-		
 		$condition =[];
 		$search = $this->input->get('search');
 		$name = $this->input->get('name');

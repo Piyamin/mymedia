@@ -1,16 +1,19 @@
 <div class="row">
    <div class="col-md-12">
       <div class="well well-sm">
-         <form class="form-horizontal" method="post">
+         <form class="form-horizontal" method="post" action="<?php echo base_url('addmovie/save') ?>">
             <fieldset>
+               <?php if ($this->session->flashdata('success-msg')) { ?>
+                  <div class="alert alert-warning" role="alert">
+                     Save success
+                  </div>
+               <?php } ?>
                <legend class="text-center header">Add Movie</legend>
-
-               <form method="POST" action="<?php echo base_url('addmovie/save') ?>">
-
+               <form>
                   <div class="form-group">
                      <div class="col-md-1 col-md-offset-2  Bullet">ชื่อเรื่อง</div>
                      <div class="col-md-8">
-                        <input id="fname" name="name" type="text" placeholder="First Name" class="form-control" require>
+                        <input id="name" name="name" type="text" placeholder="First Name" class="form-control" require>
                      </div>
                   </div>
 
@@ -21,7 +24,7 @@
                         <select class="form-control" name="genres" require>
                            <option>เลือกประเภทหนัง</option>
                            <?php foreach ($genres as $row) { ?>
-                               <option><?php echo $row['genName'] ?></option>
+                              <option value="<?php echo $row['_id'] ?>"><?php echo $row['genName'] ?></option>
                            <?php } ?>
                         </select>
                      </div>
@@ -49,14 +52,14 @@
                   <div class="form-group">
                      <div class="col-md-1 col-md-offset-2  Bullet">ความยาวของหนัง</div>
                      <div class="col-md-8">
-                        <input id="length" name="length" type="text" placeholder="ความยาวของหนัง (เช่น 1:30:00 )" class="form-control" require>
+                        <input id="length" name="length" type="text" placeholder="ความยาวของหนังใส่เป็นวินาที (เช่น 1:30:00 เป็น 3690  )" class="form-control" require>
                      </div>
                   </div>
 
                   <div class="form-group">
                      <div class="col-md-1 col-md-offset-2  Bullet">Path movie</div>
                      <div class="col-md-8">
-                        <input id="path_movie" name="path_movie" type="text" placeholder="เช่น https://www.youtube.com/embed/19UjyhKY7eA?list=RDMMC4t1_9qMwFI" class="form-control" >
+                        <input id="path_movie" name="path_movie" type="text" placeholder="เช่น https://www.youtube.com/embed/19UjyhKY7eA?list=RDMMC4t1_9qMwFI" class="form-control">
                      </div>
                   </div>
 
@@ -71,7 +74,7 @@
                   <div class="form-group">
                      <div class="col-md-1 col-md-offset-2  Bullet">Path poster movie</div>
                      <div class="col-md-8">
-                        <input id="path_poster" name="path_poster" type="text" placeholder="Path poster movie" class="form-control"require>
+                        <input id="path_poster" name="path_poster" type="text" placeholder="Path poster movie" class="form-control" require>
                      </div>
                   </div>
 
@@ -85,7 +88,7 @@
                      <button type="submit" class="btn btn-dark">Save</button>
                      <a href="<?php echo base_url('main') ?>"><button type="button" class="btn btn-dark">Back</button></a>
                   </center>
-
+               </form>
             </fieldset>
          </form>
       </div>
@@ -101,7 +104,7 @@
    .Bullet {
       color: #F5F5F5;
       font-size: 1.5rem;
-      
+
    }
 
    .bigicon {

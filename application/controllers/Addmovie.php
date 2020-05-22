@@ -8,10 +8,11 @@ class Addmovie extends CI_Controller
 		parent::__construct();
 		$this->load->model('genres_model');
 		$this->load->model('movie_model');
-    }
+		$this->load->model('customer_model');
+		$this->load->model('add_model');
+    }  
 	public function index()
 	{
-
 		$condition =[];
 		$search = $this->input->get('search');
 		$name = $this->input->get('name');
@@ -22,6 +23,7 @@ class Addmovie extends CI_Controller
 		}
 		$data['name'] = $name;
 		$data['search'] = $search;
+		$data['customer'] = $this->customer_model->findAll();
 		$data['genres'] = $this->genres_model->findAll();
 		$data['movie'] = $this->movie_model->findAll($condition);
 		$this->load->view('layout/head');
@@ -29,6 +31,28 @@ class Addmovie extends CI_Controller
 		$this->load->view('addmovie/content');
 		$this->load->view('layout/foot');
 		$this->load->view('layout/footer');
+	}
+	public function create()
+	{
+		$condition =[];
+		$search = $this->input->get('search');
+		$name = $this->input->get('name');
+		if(!empty($search)){
+			if (!empty($name)) {
+				$condition['movieName'] = array('$regex'=> $name);
+			}
+		}
+		$data['name'] = $name;
+		$data['search'] = $search;
+		$data['customer'] = $this->customer_model->findAll();
+		$data['genres'] = $this->genres_model->findAll();
+		$data['movie'] = $this->movie_model->findAll($condition);
+		$this->load->view('layout/head');
+		$this->load->view('layout/header',$data);
+		$this->load->view('addmovie/content');
+		$this->load->view('layout/foot');
+		$this->load->view('layout/footer');
+	
 	}
 	public function save()
 	{
@@ -53,15 +77,17 @@ class Addmovie extends CI_Controller
 			"Path video" => $path_movie,
 			"Path detail video" => $path_tariler,
 			"Path image" => $path_poster,
-			"abstract" => $detail
+			"plot" => $detail
 		);
-		$id = $this->cart_model->insert($data);
+		// print_r($data);
+		// exit();
+		$id = $this->add_model->insert($data);
         if(!empty($id)){
             $this->session->set_flashdata('success-msg', 'Detail Added');
             redirect('detail');
         }else{
             echo "error";
-        }
+		}
 		
 	}
 }

@@ -27,4 +27,9 @@ class Detail_model extends CI_Model
         
         return $result;
     }
+    public function insert($data)
+    {
+        $resultId = $this->mongo_db->insert('detail',$data);
+        return $resultId;
+    }
 }

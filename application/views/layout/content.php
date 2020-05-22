@@ -2,11 +2,7 @@
 
 
 
-<?php if($this->session->flashdata('success-msg')){ ?>
-    <div class="alert alert-warning" role="alert">
-            Save success
-    </div>
-<?php } ?>
+
 <div class="row">
     <div class="col">
         <div class="row">

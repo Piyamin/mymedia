@@ -12,7 +12,7 @@
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="<?php echo base_url('account') ?>">Acount</a>
                     <a class="dropdown-item" href="#">help</a>
-                    <a class="dropdown-item" href="<?php echo base_url('addmovie') ?>">Add movie</a>
+                    <a class="dropdown-item" href="<?php echo base_url('addmovie/create') ?>">Add movie</a>
                     <a class="dropdown-item" href="#"></a>
                     <a class="dropdown-item" href="<?php echo base_url()?>">LogOut</a>
                 </div>
@@ -62,7 +62,7 @@
                             </li>
                             <form class="form-inline my-2 my-lg-0" method="get">
                                 <input class="form-control mr-lg-2" id="search" name ="name" type="search" placeholder="Search" aria-label="Search" value="<?php echo $name; ?>">
-                                <button class="btn btn-outline-success my-2 my-sm-0" name="search" value="search" type="submit" <?php echo $name; ?>>Search</button>
+                                <button class="btn btn-outline-success my-2 my-sm-0" name="search" value="search" type="submit" >Search</button>
                             </form>
                         </ul>
                     </div>

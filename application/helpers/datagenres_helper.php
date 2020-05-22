@@ -19,6 +19,6 @@
      $result = $CI->history_model->findOne($condition);
      return $result['nameMovie'];
  }
- 
+
 
 ?>
