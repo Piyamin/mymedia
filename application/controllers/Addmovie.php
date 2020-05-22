@@ -9,7 +9,7 @@ class Addmovie extends CI_Controller
 		$this->load->model('genres_model');
 		$this->load->model('movie_model');
 		$this->load->model('customer_model');
-		$this->load->model('add_model');
+		$this->load->model('detail_model');
     }  
 	public function index()
 	{
@@ -66,6 +66,7 @@ class Addmovie extends CI_Controller
 		$path_tariler = $this->input->post('path_tariler');
 		$path_poster = $this->input->post('path_poster');
 		$detail = $this->input->post('detail');
+		$type = $this->input->post('type');
 		
 		$data = array(
 			"nameDetail" => $name,
@@ -79,15 +80,24 @@ class Addmovie extends CI_Controller
 			"Path image" => $path_poster,
 			"plot" => $detail
 		);
+		$data1 = array(
+			"movieName" => $name,
+			"movieYear" => $release_year,
+			"Path video" => $path_movie,
+			"Path image" => $path_poster,
+			"type" => $type
+		);
 		// print_r($data);
 		// exit();
-		$id = $this->add_model->insert($data);
+		$id = $this->detail_model->insert($data);
+		$id = $this->movie_model->insert($data1);
         if(!empty($id)){
             $this->session->set_flashdata('success-msg', 'Detail Added');
-            redirect('detail');
+            redirect('addmovie/create');
         }else{
             echo "error";
 		}
+		
 		
 	}
 }

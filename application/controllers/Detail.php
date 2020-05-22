@@ -37,4 +37,5 @@ class Detail extends CI_Controller
 		$this->load->view('layout/foot');
 		$this->load->view('layout/footer');
 	}
+	
 }

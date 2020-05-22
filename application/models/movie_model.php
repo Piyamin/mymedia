@@ -33,5 +33,11 @@ class Movie_model extends CI_Model
         return $result;
     
     }
+    public function insert($data)
+    {
+        $resultId = $this->mongo_db->insert('movie',$data);
+       
+        return $resultId;
+    }
     
 }

@@ -7,5 +7,5 @@ class Add_model extends CI_Model
     {
         parent::__construct();
     }
-   
+
 }
