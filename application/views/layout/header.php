@@ -56,7 +56,7 @@
                             
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="<?php echo base_url('contact')?>">
+                                <a class="nav-link" href="<?php echo base_url('contact/create')?>">
                                     CONTACT<span class="sr-only">(current)</span>
                                 </a>
                             </li>

@@ -1,39 +1,45 @@
 <div class="row">
     <div class="col-md-12">
+         <?php if($this->session->flashdata('success-msg')){ ?>
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Success!</strong> Indicates a successful or positive action.
+            </div>
+        <?php } ?>
         <div class="well well-sm">
-            <form class="form-horizontal" method="get">
+            <form class="form-horizontal" method="post" action="<?php echo base_url('Contact/save'); ?>">
                 <fieldset>
                     <legend class="text-center header">Contact us</legend>
-
+                        
                     <div class="form-group">
                         <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                         <div class="col-md-8">
-                            <input id="fname" name="fname" type="text" placeholder="First Name" class="form-control">
+                            <input id="fname" name="FirstName" type="text" placeholder="First Name" class="form-control">
                         </div>
                     </div>
                     <div class="form-group">
-                        <span class="col-md-1 col-md-offset-2 text-center"></span>
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                         <div class="col-md-8">
-                            <input id="lname" name="lname" type="text" placeholder="Last Name" class="form-control">
+                            <input id="lname" name="LastName" type="text" placeholder="Last Name" class="form-control">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope bigicon"></i></span>
                         <div class="col-md-8">
-                            <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                            <input id="email" name="Email" type="text" placeholder="Email Address" class="form-control">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
                         <div class="col-md-8">
-                            <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                            <input id="phone" name="Phone" type="text" placeholder="Phone" class="form-control">
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fas fa-sticky-note"></i></span>
                         <div class="col-md-8">
                             <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
                         </div>
