@@ -30,6 +30,16 @@
                      </div>
                   </div>
 
+                  <div class="form-group">
+                     <div class="col-md-1 col-md-offset-2  Bullet">ประเภทหนังที่เข้า </div>
+                     <div class="col-md-8">
+                        <select class="form-control" name="genres" require>
+                           <option>complete</option>
+                           <option>comming soon</option>
+                        </select>
+                     </div>
+                  </div>
+
 
                   <div class="form-group">
                      <div class="col-md-1 col-md-offset-2  Bullet">ผู้กำกับ</div>
